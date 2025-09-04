@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 130 | Working with Images</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://byui-cse.github.io/cse-ww-program/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://byui-cse.github.io/cse-ww-program/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="https://byui-cse.github.io/cse-ww-program/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/course.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/vs2015.min.css">
+  <script src="https://js-cdn.dynatrace.com/jstag/16294a69b33/bf29241ovs/692a19d31f48cd0e_complete.js"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="page">
+      <h1>WDD 130<span id="coursetitle">: Web Fundamentals</span></h1>
+      <img src="../images/byui-logo.svg" alt="BYU-I logo" class="logo">
+    </div>
+  </header>
+
+  <main class="page">
+    <nav>
+      <span><a href="../">Home</a></span>
+      <span class="active"><a href="../week01/">W1</a></span>
+      <span><a href="../week02/">W2</a></span>
+      <span><a href="../week03/">W3</a></span>
+      <span><a href="../week04/">W4</a></span>
+      <span><a href="../week05/">W5</a></span>
+      <span><a href="../week06/">W6</a></span>
+      <span><a href="../week07/">W7</a></span>
+    </nav>
+
+    <h2>W01 Learning Activity: Working with Web Images</h2>
+    <h3>Overview</h3>
+    <p>Most websites contain not only words, but also images. Some image formats are better suited for the
+      web than others. This activity introduces using images for the web and how
+      to optimize images so that they use less memory, thus supporting smaller page weights, which decreases the overall
+      download time.
+    </p>
+
+    <h3>Prepare</h3>
+
+    <h4>Image Types</h4>
+
+    <p>The following video introduces the popular types of images used on the web.</p>
+
+    <div class="video-container">
+      <iframe title="Video Demonstration of Image File Types"
+        src="https://www.loom.com/embed/5ed5f9d351844d4f818fb398dbde5728?sid=388f85c4-8d8b-4994-86fd-e177416ab07d"
+        allowfullscreen></iframe>
+      <p>File: ▶️ <a
+          href="https://www.loom.com/share/5ed5f9d351844d4f818fb398dbde5728?sid=60a36439-e996-4e12-8e07-fe3605329096"
+          target="_blank">Image File Types</a> &ndash; <span class="smaller">[ 1:55 minutes ]</span>
+      </p>
+    </div>
+
+    <p>As described in this video, the most common types of images for the web are:</p>
+
+    <ul>
+      <li><strong>JPEG / JPG</strong>: Typically used for photographs and complex images. Uses a compression that looses
+        some information but can greatly reduce file size.</li>
+      <li><strong>PNG</strong>: Typically used for graphics, logos, and images requiring a transparent background. Uses
+        compression that does not lose information and supports alpha transparency.</li>
+      <li><strong>GIF</strong>: Typically used for small animations and simple graphics. Limited to 256 colors, but does
+        support basic transparency and animations.</li>
+      <li><strong>WEBP</strong>: A more modern format that supports better compression than JPG and PNG while also
+        providing for animation and transparency. Can be used as an alternative to JPG and PNG, but it is not quite as
+        popular at this point.</li>
+      <li><strong>SVG</strong>: Typically used for logos, icons, and text that need to scale cleanly to any size.</li>
+    </ul>
+
+    <h4>Including Images on a Web Page</h4>
+    <p>Once you have the image you would like to include on your page, you use the image tag as follows:</p>
+
+    <pre><code class="image">&lt;img src=&quot;temple.jpg&quot; alt=&quot;A picture of the temple.&quot;&gt;
+&lt;img src=&quot;our-process.png&quot; alt=&quot;A graphic describing the company&apos;s process&quot;&gt;
+&lt;img src=&quot;logo.svg&quot; alt=&quot;Company logo&quot;&gt;
+</code></pre>
+
+    <p>Notice that each of these examples uses a different type of image format. You do not have to do anything
+      different in the html to use them. You just include the file name.</p>
+
+    <p>Also, remember that the <code>alt</code> text is very important for many reasons including, to provide a
+      description of the image in case it does not load right away, to provide information for robots that might crawl
+      your page, such as for search engine optimization, and for users that may need screen readers to access your
+      content.</p>
+
+
+    <h4>Image Optimization</h4>
+    <p>It is important to make sure that the images you include on your page are optimized for a good user experience.
+      If you have images that are very large, it will take longer to load the page and will require your users to use
+      more data.</p>
+
+    <p>The following video shows how to optimize images using the free online tool <a href="https://squoosh.app"
+        target="_blank">Squoosh.app</a> .</p>
+
+    <div class="video-container">
+      <iframe title="Video Demonstration of Image Optimization"
+        src="https://www.loom.com/embed/4657d16ff6d04ff8ad7a58d6ef03a28d?sid=f0a35e4b-058b-4eb5-bbc1-db6a728fc6e1"
+        allowfullscreen></iframe>
+      <p>File: ▶️ <a
+          href="https://www.loom.com/share/4657d16ff6d04ff8ad7a58d6ef03a28d?sid=cca481a3-e193-475f-a901-2a874baf8bf4"
+          target="_blank" rel="noopener">Basic Image Optimization</a> &ndash; <span class="smaller">[ 1:36 minutes
+          ]</span>
+      </p>
+    </div>
+
+    <h4>Three Basic Steps of Image Optimization</h4>
+    <p>The original photos that we use are often large in terms of dimensions and file size. Large photos need to
+      be scaled down and optimized to a size that is actually needed on a web page. The optimal size is determined by
+      the design and layout of the page. Software can be used to crop, reduce, and optimize the images.</p>
+
+    <p>These are the basic steps of image optimization:</p>
+    <ol>
+      <li><strong>Crop</strong> the original image to focus on the most important content.</li>
+      <li><strong>Resize</strong> the image to the maximum size that is required in the design of the web page.</li>
+      <li><strong>Reduce the quality</strong> of the image to an acceptable level which will reduce its file size.</li>
+    </ol>
+    <div class="callout info">
+      <p>Optimizing images is an easy way to improve page performance without requiring a
+        significant time investment.</p>
+    </div>
+
+    <div class="callout warning">
+      <p>For this course, all images must be optimized in order to reduce overall page weight (the download size of the
+        page). The standard for this course is that all images need to be less than <strong>100kB</strong> in memory
+        size. If you have an image that is larger than 100kB, you will need to reduce its size by optimizing it.</p>
+    </div>
+
+    <h3>Activity Instructions</h3>
+    <p>For this activity you will optimize a large image and include the smaller version on a web page.</p>
+
+    <p>There are many applications that can be used to edit and optimize images. In this activity, you will use the
+      free, online application, Squoosh.app.</p>
+
+    <h4 class="step">Find the Files</h4>
+    <ol>
+      <li>Open VS Code to your course repository folder.</li>
+      <li>Navigate to the week01 folder. In this folder you will see:
+        <ul>
+          <li><strong>images.html</strong>: The html file where you will include your image.</li>
+          <li>The <strong>images</strong> subfolder: This is the folder that contains the large image and where you will
+            place your small image.</li>
+          <li><strong>images/temple-large.jpeg</strong>: In the images subfolder, this is the large file that needs to
+            be optimized.</li>
+        </ul>
+      </li>
+    </ol>
+    <h4 class="step">Optimize the image</h4>
+    <p>There are many applications that can be used to edit and optimize images including those listed under
+      <strong>Editing</strong> on this <a
+        href="https://byui-cse.github.io/cse-ww-program/resources/frontend-resources.html#images"
+        target="_blank">resource site</a>. In this activity, you will be introduced to and use a free, online
+      application named Squoosh.app.
+    </p>
+
+
+    <ol>
+      <li>In your web browser, navigate to the online application, <a href="https://squoosh.app/"
+          target="_blank">Squoosh.app</a>.</li>
+      <li>Select the button in the middle of the page and upload the <strong>temple-large.jpeg</strong> file from your
+        computer.</li>
+      <li>In the <strong>Edit</strong> panel on the right, toggle <strong>Resize</strong> and change
+        the width to 800 pixels.</li>
+      <li>Under <strong>Compress</strong>, try changing the file type and adjust the quality until the file is less than
+        100KB.</li>
+      <li>Click the download button (bottom right) to save the image to your computer. Change the name of the file to be
+        <strong>temple-small</strong> with whatever file extension matches the format you selected and save it back in
+        the <strong>week01/images</strong> folder.
+      </li>
+    </ol>
+    <h4 class="step">Update the html file to include your new image</h4>
+    <ol>
+      <li>Open the <strong>images.html</strong> file in the <strong>week01</strong> folder.</li>
+      <li>Right-click the <strong>images.html</strong> file and open it in Live/Five Server.</li>
+      <li>Notice how large the image is.</li>
+      <li>Update the <code>img</code> tag in the html file to refer to your new image.</li>
+      <li>View the page again in your browser and notice how much smaller the image is on your page.</li>
+    </ol>
+
+    <h3>Submission</h3>
+    <p>You do not need to submit anything yet for this learning activity. When you have finished the remaining learning
+      activities for this week, you will return to Canvas to report on your progress.</p>
+
+    <hr>
+    <nav>
+      <span><a href="prepare-files-folders.html">Next: Working with Files and Folders</a></span>
+    </nav>
+
+  </main>
+  <footer>
+    <p>Copyright &copy; Brigham Young University-Idaho | All rights reserved</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="../scripts/prevent-code-select.js"></script>
+</body>
+
+</html>
